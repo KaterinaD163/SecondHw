@@ -1,6 +1,56 @@
-public class Main {
-    public static void main(String[] args) {
+import Transport.Car;
 
-        System.out.println("Hello world!");
+import java.sql.SQLOutput;
+import java.util.regex.Pattern;
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        Human human1 = new Human(35, "Максим", "Минск", "бренд-менеджер");
+        Human human2 = new Human(29, "Аня", "Москва", "методист образовательных программ");
+        Human human3 = new Human(28, "Катя", "Калининград", "продакт-менеджер");
+        Human human4 = new Human(27, "Артем", "Москва", "директор по развитию бизнеса");
+        Human human5 = new Human(21, "Владимир", "Казань", "");
+        Flower flower1 = new Flower("Роза обыкновенная", "", "Голландия", 35.59, 0);
+        Flower flower2 = new Flower("Хризантема", "", "", 15.00, 5);
+        Flower flower3 = new Flower("Пион", "", "Англия", 69.9, 1);
+        Flower flower4 = new Flower("Гипсофила", "", "Турция", 0, 10);
+        System.out.println(flower1);
+        System.out.println(flower2);
+        System.out.println(flower3);
+        System.out.println(flower4);
+        Car car1 = new Car("Lada", "Grande", 1.7f, "жёлтый цвет кузова", 2015,
+                "сборка в России", "механическая коробка",
+                "универсал", "к547ен163", 5, "летняя резина", "",
+                "безключевой доступ", 2013, 11, 22, 33_000,
+                "384930201");
+        Car car2 = new Car("Audi", "A8 50 L TDI quattro", 3.0f, "черный цвет кузова",
+                2020, "сборка в Германии", "автоматическая коробка", "седан",
+                "н483ва777", 5, "летняя резина", "удалённый запуск двигателя",
+                "", 2023, 10, 4, 17_000, "674837261");
+        Car car3 = new Car("BMW", "Z8", 3.0f, "чёрный цвет кузова",
+                2021, "сборка в Германии", "автоматическая коробка", "хэтчбек",
+                "г372ар113", 5, "зимняя резина", "",
+                "безключевой доступ", 2023, 3, 5, 25_000,
+                "564738273");
+        Car car4 = new Car("Kia", "Sportage 4 поколение", 2.4f, "красный цвет кузова",
+                2018, " сборка в Южной корее", " механическая коробка", "универсал",
+                "в365вр182", 5, "зимняя резина", "удалённый запуск двигателя",
+                "", 2013, 2, 12, 45_000, "565656565");
+        Car car5 = new Car("Hyundai", "Avante", 1.6f, "оранжевый цвет кузова",
+                2016, "сборка в Южной корее", "механическая коробка", "минивэн",
+                "о256вп763", 8, "летняя резина", "",
+                "безключевой доступ", 2010, 4, 27, 13_000,
+                "465647382");
+    }
+    public static void replaceTiresForSeasonal() {
+        System.out.println("Смени шины на сезонные");
     }
 }
+
+
+
+
+
+
